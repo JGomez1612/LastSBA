@@ -3,14 +3,15 @@ import { Routes, Route } from 'react-router-dom'
 import './App.css'
 
 // Components
-import HomePage from './components/HomePage'
+import HomePage from './components/HomePage/HomePage';
+import NavBar from './components/NavBar/NavBar';
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      {/* <NavBar /> */}
+      <NavBar />
       <Routes>
         <Route path="/" element={<HomePage />} />
         {/* <Route path="/games" element={<GamesPage />} /> */}
